@@ -187,7 +187,6 @@
                 alt="Signature"
                 class="mt-2 h-20 border border-gray-200 bg-white"
               />
-              <p class="mt-1 text-sm text-gray-500">{{ signature.date }}</p>
             </div>
           </div>
         </div>
