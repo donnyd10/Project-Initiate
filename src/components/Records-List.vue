@@ -68,27 +68,27 @@
                 <th
                   class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider"
                 >
-                  Customer
+                  Project Name
                 </th>
                 <th
                   class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider"
                 >
-                  Account #
+                  Project Code
                 </th>
                 <th
                   class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider"
                 >
-                  Date
+                  Project Head
                 </th>
                 <th
                   class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider"
                 >
-                  Status
+                  Project Team Lead
                 </th>
                 <th
                   class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider"
                 >
-                  Actions
+                  Project Status
                 </th>
               </tr>
             </thead>

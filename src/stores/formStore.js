@@ -8,6 +8,8 @@ export const useFormStore = defineStore('form', () => {
     section1: { expanded: true },
     section2: { expanded: false },
     section3: { expanded: false },
+    section4: { expanded: false }, // 👈 Add this
+    section5: { expanded: false }, // 👈 And this
   })
 
   const formData = ref({
@@ -33,6 +35,16 @@ export const useFormStore = defineStore('form', () => {
       projectType: '',
       projectPhase: '',
       projectStatus: '',
+      percentageCompletion: '',
+      projectHealth: '',
+    },
+    section4: {
+      deliverables: '',
+      accomplishments: '',
+      assignedPersonnel: '',
+    },
+    section5: {
+      attachment: '',
     },
   })
 
@@ -41,6 +53,7 @@ export const useFormStore = defineStore('form', () => {
     projectType: ['Construction', 'Maintenance', 'Research', 'Development'],
     projectPhase: ['Planning', 'Initiation', 'Execution', 'Monitoring', 'Closure'],
     projectStatus: ['Not Started', 'In Progress', 'On Hold', 'Completed', 'Cancelled'],
+    projectHealth: ['Excellent', 'Good', 'Fair', 'Poor', 'Critical'],
   })
 
   const errors = ref({
@@ -189,6 +202,14 @@ export const useFormStore = defineStore('form', () => {
         projectPhase: 'Project Phase',
         projectStatus: 'Project Status',
       },
+      section4: {
+        deliverables: 'Deliverables',
+        accomplishments: 'Accomplishments',
+        assignedPersonnel: 'Assigned Personnel',
+      },
+      section5: {
+        attachment: 'Attachment',
+      },
     }
 
     return subfield ? labels[section][field][subfield] : labels[section][field]
@@ -224,6 +245,8 @@ export const useFormStore = defineStore('form', () => {
     if (!validateSection('section1')) isValid = false
     if (!validateSection('section2')) isValid = false
     if (!validateSection('section3')) isValid = false
+    if (!validateSection('section4')) isValid = false // 👈 Add this
+    if (!validateSection('section5')) isValid = false // 👈 Add this
 
     return isValid
   }
