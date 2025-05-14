@@ -252,9 +252,9 @@ export const useFormStore = defineStore('form', () => {
   }
 
   const submitForm = async () => {
-    if (!validateForm()) {
-      return false
-    }
+    // if (!validateForm()) {
+    //   return false
+    // }
 
     loading.value = true
 

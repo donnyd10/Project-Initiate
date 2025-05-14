@@ -524,7 +524,7 @@ import { onMounted } from 'vue'
 const formStore = useFormStore()
 
 // Destructure state
-const { loading, sections, formData, dropdownOptions, errors } = storeToRefs(formStore)
+const { loading, sections, formData, dropdownOptions } = storeToRefs(formStore)
 
 // Destructure actions
 const { toggleSection, getUserLocation, updateCoordinates, submitForm } = formStore
